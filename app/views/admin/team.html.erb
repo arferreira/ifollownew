@@ -1,0 +1,40 @@
+<section id="main-content">
+<section class="wrapper">
+ <section class="panel">
+<header class="panel-heading">
+Listagem geral equipes
+</header>
+<table class="table table-striped table-advance table-hover">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Twitter</th>
+      <th>Avatar</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= team.name %></td>
+        <td><%= team.twitter %></td>
+        <td><%= image_tag team.imageteam_url(:mini_thumb) %></td>
+        <td><%= link_to 'Mostrar', team, :class => "btn btn-success btn-xs" %></td>
+        <td><%= link_to 'Editar', edit_team_path(team), :class => "btn btn-primary btn-xs" %></td>
+        <td><%= link_to 'Excluir', team, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Cadastrar Novo', {:controller => "admin", :action => "new_team" }, :class => "btn btn-success btn-lg btn-block" %>
+
+</section>
+</section>
+</section>
+

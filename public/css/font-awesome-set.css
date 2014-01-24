@@ -1,0 +1,103 @@
+/*
+Icon list
+=========================== */
+ul.the-icons {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    float:none;
+	
+}
+
+.icon-square,
+.icon-rounded,
+.icon-circled,
+.icon-square.icon-32,
+.icon-rounded.icon-32,
+.icon-circled.icon-32{
+    margin: 10px 10px 10px 0;
+    display: inline-block !important;
+    text-align: center !important;
+	color:#b3b3b3;
+	background-color:#f1f1f1;
+    width: 28px;
+    height: 28px;
+	padding:5px;
+    font-size: 12px;
+    line-height: 18px;
+    text-shadow:none;
+    cursor: pointer;
+}
+
+.icon-circled{
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.icon-rounded, 
+.icon-rounded.icon-32{
+	background:none;
+	color:#bebebe;
+	border:1px solid #bebebe;
+	line-height: 14px;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.icon-rounded.icon-128{
+	background:none;
+	color:#bebebe;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.icon-rounded.icon-64{
+	background:none;
+	color:#bebebe;
+	line-height:42px;	
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.icon-64{
+	padding:10px;
+    width: 64px;
+    height: 64px;
+	font-size:32px;
+	line-height:46px;
+}
+
+.icon-128{
+	padding:20px;
+    width: 103px;
+    height: 103px;
+	font-size:52px;
+	line-height:58px;
+}
+
+.icon-rounded.icon-white, 
+.icon-rounded.icon-32.icon-white, 
+.icon-rounded.icon-64.icon-white, 
+.icon-rounded.icon-128.icon-white{
+	color:#fff;
+	border:1px solid #fff;
+}
+
+.icon-square.icon-white, 
+.icon-square.icon-32.icon-white, 
+.icon-square.icon-64.icon-white, 
+.icon-square.icon-128.icon-white, 
+.icon-circled.icon-white, 
+.icon-circled.icon-32.icon-white, 
+.icon-circled.icon-64.icon-white, 
+.icon-circled.icon-128.icon-white{
+	background-color:#fff;
+}

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @team.name %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @team.twitter %>
+</p>
+
+<p>
+  <strong>Imageteam:</strong>
+  <%= image_tag(@team.imageteam_url(:thumb)) %>
+</p>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

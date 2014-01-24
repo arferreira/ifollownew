@@ -1,0 +1,99 @@
+/* ==============================================================
+
+Template name : Voddol clean and modern one page template
+Categorie : One page template
+Author : Nce18cex
+Version : v1.0.0
+Created : 1 Oktober 2013
+Last update : 10 Oktober 2013
+
+-----------------------------------------------------------------
+CSS structure
+-----------------------------------------------------------------
+
+01. Color
+02. Background color
+04. Border color
+05. button
+
+============================================================== */
+
+/*
+Color
+================================================== */
+
+a, a:hover, .color,  .icon-square.icon-white, .icon-square.icon-32.icon-white, .icon-square.icon-64.icon-white, .icon-square.icon-128.icon-white, 
+.icon-circled.icon-white, .icon-circled.icon-32.icon-white, .icon-circled.icon-64.icon-white, .icon-circled.icon-128.icon-white, .nav li a.selected, .nav li a.active, .nav li.dropdown.active a, .info span, #filter-bar ul#filters li a.selected, #filter-bar ul#filters li a:hover, 
+.article-wrapper h1 a:hover, .article-wrapper h2 a:hover, .article-wrapper h3 a:hover, .article-wrapper h4 a:hover, .article-wrapper h5 a:hover, 
+.article-wrapper h6 a:hover, .widget .tags li a:hover, .maintenance .social-link:hover i, .boxed.feature .icon-rounded{
+	color:#6F1D1E;
+}
+
+/*
+Background color 
+================================================== */
+.background-color, #header, #services, #services .heading span, #contact,#contact .heading span, .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal, 
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal, 
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus, 
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active  .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover, 
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active, 
+.article-head span, .date-post, .read-more, .caption-bg, div.pp_default .pp_close, .navbar .dropdown-menu > .active > a, .navbar .dropdown-menu > .active > a:hover, 
+.navbar .dropdown-menu > .active > a:focus, .pager li > a:hover, .pager li > a:focus, aside .widget .head span, .tabber li:hover, #toTopHover, .pricing-head, .color-bg, .panel-heading:hover, 
+#iview div.iview-directionNav a{
+	background-color:#6F1D1E;
+}
+
+/*
+Boredr color 
+================================================== */
+.tabber li:hover, .widget .tags li a:hover, .social-link:hover i.icon-rounded, .boxed:hover, .boxed.feature, .boxed.feature .icon-rounded, .form-control:focus{
+	border-color:#6F1D1E;
+}
+
+.nav li a.selected, .nav li a.active, .navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:focus, .nav li.active .dropdown-menu li a:hover, 
+.nav li.active .dropdown-menu li a:focus, .nav li.dropdown.active a{
+	border-left:3px solid #6F1D1E;
+}
+
+/*
+Button
+================================================== */
+.btn-primary {
+  color: #ffffff;
+  background-color: #6F1D1E;
+  border:none;  
+  border-bottom:5px solid #000;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #6F1D1E;
+  border:none;  
+  border-bottom:5px solid #000;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  color: #ffffff;
+  background-color: #6F1D1E;
+  border:none;  
+  border-bottom:5px solid #c53131;
+  opacity: 0.50;
+  filter: alpha(opacity=50);   
+}

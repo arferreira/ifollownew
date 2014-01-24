@@ -1,0 +1,40 @@
+    <link href="/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/admin/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="/admin/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="/admin/stylesheet" href="css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="/admin/css/style.css" rel="stylesheet">
+    <link href="/admin/css/style-responsive.css" rel="stylesheet" />
+<body class="login-body">
+
+    <div class="container">
+    	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name),:html => {:class => "form-signin"}) do |f| %>
+      <form class="form-signin" action="index.html">
+        <h2 class="form-signin-heading">Acesse</h2>
+        <div class="login-wrap">
+
+            <%= f.email_field :email, :autofocus => true, :class => "form-control", :placeholder => "Usuário" %>
+
+
+            <%= f.password_field :password, :class => "form-control", :placeholder => "Senha" %>
+            <% if devise_mapping.rememberable? -%>
+            <label class="checkbox">
+            	<%= f.check_box :remember_me %><%= f.label :lembrar %>
+                
+                <span class="pull-right"><%= link_to "Esqueceu sua senha?", new_password_path(resource_name) %></span>
+            </label>
+          	<% end -%>
+            <%= f.submit "Entrar", :class => "btn btn-lg btn-login btn-block" %>
+            <p>iFollow Agência Digital - 2013</p>
+
+
+        </div>
+
+      </form>
+      <% end %>
+    </div>
+
+
+  </body>
