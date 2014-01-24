@@ -38,11 +38,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development do 
 
-	gem 'better_errors'
-
-end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -58,3 +54,13 @@ end
 gem 'capistrano'
 
 gem 'unicorn'
+
+group :development do
+
+	gem 'better_errors'
+	gem "binding_of_caller"
+	gem 'capistrano-unicorn', :require => false
+
+end
+
+gem 'rvm-capistrano'
