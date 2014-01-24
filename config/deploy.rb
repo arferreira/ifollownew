@@ -1,5 +1,6 @@
 require 'capistrano-unicorn'
 require 'rvm/capistrano'
+require "bundler/capistrano"
 
 set :application, '162.243.199.79'
 
