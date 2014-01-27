@@ -9,9 +9,9 @@ namespace :unicorn do
   %w[start stop].each do |command|
     desc "#{command} unicorn"
     task command, roles: :app do
-      run "service unicorn_#{application} #{command}"
+      run "#{current_path}/config/unicorn_init.sh #{command}"
     end
-    # after "deploy:#{command}", "unicorn:#{command}"
+    after "deploy:#{command}", "unicorn:#{command}"
   end
 
   desc "Restart unicorn"
