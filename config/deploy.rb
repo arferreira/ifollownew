@@ -37,6 +37,7 @@ namespace :deploy do
   desc "Instala configurações do Nginx e Unicorn"
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
+    sudo "chmod +x #{current_path}/config/unicorn_init.sh"
     sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
   end
   after "deploy:setup", "deploy:setup_config"
