@@ -7,7 +7,8 @@ load "config/recipes/logs"
 load "config/recipes/nginx"
 load "config/recipes/unicorn"
 
-set :application, '162.243.199.79'
+set :application, "ifollow"
+server "162.243.199.79", :web, :app, :db, primary: true
 set :keep_releases, 2
 set :scm, :git
 set :repository, 'git@github.com:arferreira/ifollownew.git'
@@ -20,23 +21,6 @@ set :use_sudo, false
 set :rvm_ruby_string, 'ruby-2.1.0' # Change to your ruby version
 
 set :rvm_type, :system # :user if RVM installed in $HOME
-
-# Minhas configurações do Unicorn
-# comando para execução do unicorn
-# <optinal>
-set :unicorn_binary,  "bundle exec unicorn"
-# caminho para o arquivo de configuração do unicorn
-# <optinal>
-set :unicorn_config,  "#{current}/config/unicorn.rb"
-# onde será armazenado o pid do processo do unicorn
-# <optinal>
-set :unicorn_pid,     "#{deploy_to}/shared/pids/unicorn.pid"
-
-role :web, application
-
-role :app, application
-
-role :db,  application, primary: true
 
 namespace :deploy do
   # verifica as pasta necessarias para o envio, e inicialização do s serviços
@@ -54,7 +38,6 @@ namespace :deploy do
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
     sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
-    puts "Now edit the config files in #{shared_path}."
   end
   after "deploy:setup", "deploy:setup_config"
 
